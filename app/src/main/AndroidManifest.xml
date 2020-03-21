@@ -9,7 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".ThirdActivity"></activity>
+        <activity android:name=".ActivityWithFragment"></activity>
+        <activity android:name=".ThirdActivity" />
         <activity
                 android:name=".SecondActivity"
                 android:theme="@style/Theme.AppCompat.Light.Dialog" />

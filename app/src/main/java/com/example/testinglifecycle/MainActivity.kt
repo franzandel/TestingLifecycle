@@ -3,9 +3,9 @@ package com.example.testinglifecycle
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 const val TAG_TESTLIFECYCLE = "TEST_LIFECYCLE"
@@ -51,6 +51,11 @@ class MainActivity : AppCompatActivity() {
 
         btnFullActivity.setOnClickListener {
             val intent = Intent(this, ThirdActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnActivityWithFragment.setOnClickListener {
+            val intent = Intent(this, ActivityWithFragment::class.java)
             startActivity(intent)
         }
     }
